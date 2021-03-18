@@ -1,0 +1,18 @@
+type Trainee  {
+  id:ID!
+  name: String
+  email:String
+}
+type traineeOutput {
+  data: Trainee
+  message: String
+  status: Int
+}
+input createTraineeInput {
+  name: String,
+  email:String
+}
+input updateTraineeInput {
+  name: String,
+  email:String
+}
